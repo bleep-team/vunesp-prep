@@ -64,9 +64,12 @@ Apps live in `apps/<name>/`; packages live in `packages/<name>/` and are named `
 ## Rules & skills
 
 - `.claude/rules/` — monorepo (new packages) and code-review conventions.
-- `.claude/skills/` — engineering: turborepo, monorepo-management,
-  next-best-practices, shadcn, tdd (symlinked from `.agents/skills/`); design &
+- `.agents/skills/` (symlinked into `.claude/skills/`) — engineering: turborepo,
+  monorepo-management, shadcn, tdd, next-dev-loop; design &
   visuals: ui-ux-pro-max, web-design-guidelines, baoyu-infographic,
   baoyu-diagram, diagram-creator, html-diagram. Third-party skills are tracked in
   `skills-lock.json` — update with `npx skills update -p`.
+- Next.js guidance: `apps/web/AGENTS.md` (written by `next dev`) points at the
+  version-matched docs in `node_modules/next/dist/docs/` — read those before
+  writing Next.js code.
 - `docs/adr/` — architecture decisions.

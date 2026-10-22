@@ -1,4 +1,4 @@
-> **Skills:** Use `/tdd` when writing tests, `/next-best-practices` for App Router code.
+> **Skills:** Use `/tdd` when writing tests, and the bundled Next.js docs (`apps/web/node_modules/next/dist/docs/`) for App Router code.
 
 When reviewing or writing code:
 
