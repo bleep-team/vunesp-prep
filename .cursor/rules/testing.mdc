@@ -1,0 +1,12 @@
+---
+description: 'Testing standards for the Vunesp Prep monorepo'
+globs: ['**/*.test.ts', '**/*.test.tsx']
+alwaysApply: false
+---
+
+# Testing Standards
+
+- Test runner: Vitest (`happy-dom` for React); colocate tests next to source as `*.test.ts(x)`
+- Use descriptive test names that read as sentences
+- Every package must have tests
+- Run `pnpm test` (all) or `pnpm --filter <name> test` (one package)

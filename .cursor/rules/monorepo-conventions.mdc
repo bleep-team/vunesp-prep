@@ -1,0 +1,14 @@
+---
+description: 'Core monorepo conventions for the Vunesp Prep project'
+alwaysApply: true
+---
+
+# Vunesp Prep Monorepo Conventions
+
+- Apps live in `apps/<name>/`; packages in `packages/<name>/`, named `@vunesp/<name>`
+- TypeScript strict; named exports; no `any` without justification
+- Cross-package imports use package names, not relative paths
+- Shared configs: `@vunesp/typescript-config`, `@vunesp/eslint-config`; Prettier at the repo root
+- UI: shadcn/ui + Tailwind v4 in `@vunesp/ui`, consumed as source via `transpilePackages`
+- Test runner: Vitest, colocated `*.test.ts(x)`
+- See `.claude/rules/monorepo.md` for how to add a package

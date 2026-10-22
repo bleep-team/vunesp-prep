@@ -1,0 +1,11 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    // `next typegen` (typecheck) and `next build` both write to .next/ — run
+    // them in sequence so a parallel build can't wipe the generated route types.
+    "build": {
+      "dependsOn": ["^build", "typecheck"]
+    }
+  }
+}
