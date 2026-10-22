@@ -1,0 +1,10 @@
+{
+  "extends": "@vunesp/typescript-config/react.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@vunesp/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "vitest.config.ts"]
+}

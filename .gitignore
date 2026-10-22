@@ -1,0 +1,16 @@
+node_modules/
+.pnpm-store/
+.env
+.env.*
+!.env.example
+dist/
+.next/
+out/
+next-env.d.ts
+.turbo/
+coverage/
+*.tsbuildinfo
+.DS_Store
+.vercel
+.context/
+.claude/settings.local.json
